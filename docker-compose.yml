@@ -1,0 +1,10 @@
+version: '2'
+services:
+  bower_proxy:
+    build: private-bower
+    volumes:
+      - /docker/private-bower/data:/private-bower/
+    restart: always
+    ports:
+      - "9090:5678"
+
